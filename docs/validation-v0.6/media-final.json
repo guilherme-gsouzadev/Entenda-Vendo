@@ -1,0 +1,32 @@
+[
+  {
+    "file": "probabilidade-preliminar-silencioso.mp4",
+    "frames": 16800,
+    "durationSeconds": 560,
+    "fps": 30,
+    "width": 960,
+    "height": 540,
+    "audio": false,
+    "decode": "PASS"
+  },
+  {
+    "file": "retirada-sem-reposicao.mp4",
+    "frames": 360,
+    "durationSeconds": 12,
+    "fps": 30,
+    "width": 960,
+    "height": 540,
+    "audio": false,
+    "decode": "PASS"
+  },
+  {
+    "file": "amostras-17-shots.mp4",
+    "frames": 1020,
+    "durationSeconds": 34,
+    "fps": 30,
+    "width": 960,
+    "height": 540,
+    "audio": false,
+    "decode": "PASS"
+  }
+]

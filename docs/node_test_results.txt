@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: antes 3 azuis + 2 vermelhas, total cinco
+ok 1 - antes 3 azuis + 2 vermelhas, total cinco
+  ---
+  duration_ms: 1.49692
+  type: 'test'
+  ...
+# Subtest: depois exatamente 2+2 dentro e UMA azul visível fora
+ok 2 - depois exatamente 2+2 dentro e UMA azul visível fora
+  ---
+  duration_ms: 0.171429
+  type: 'test'
+  ...
+# Subtest: probabilidade: retirada sem reposição
+ok 3 - probabilidade: retirada sem reposição
+  ---
+  duration_ms: 0.155315
+  type: 'test'
+  ...
+# Subtest: questão final: 4/7 * 3/6 = 2/7, complemento 5/7
+ok 4 - questão final: 4/7 * 3/6 = 2/7, complemento 5/7
+  ---
+  duration_ms: 0.177959
+  type: 'test'
+  ...
+# Subtest: dado e árvore não confundem OU e E
+ok 5 - dado e árvore não confundem OU e E
+  ---
+  duration_ms: 0.189266
+  type: 'test'
+  ...
+# Subtest: ratios invalidos levantam erro
+ok 6 - ratios invalidos levantam erro
+  ---
+  duration_ms: 0.335417
+  type: 'test'
+  ...
+# Subtest: 9 cenas e 17 tomadas sem lacunas/overlap, 560 segundos a 30fps
+ok 7 - 9 cenas e 17 tomadas sem lacunas/overlap, 560 segundos a 30fps
+  ---
+  duration_ms: 0.301035
+  type: 'test'
+  ...
+# Subtest: roteiro possui um bloco por tomada com textos e tempos corretos
+ok 8 - roteiro possui um bloco por tomada com textos e tempos corretos
+  ---
+  duration_ms: 0.50374
+  type: 'test'
+  ...
+# Subtest: legendas provisórias dentro da duração e sem sobreposição
+ok 9 - legendas provisórias dentro da duração e sem sobreposição
+  ---
+  duration_ms: 0.460465
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 68.854104

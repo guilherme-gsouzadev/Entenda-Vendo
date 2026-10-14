@@ -1,0 +1,104 @@
+[
+  {
+    "shot": "SH01",
+    "montage_frame": 30,
+    "mean_absolute_pixel_error": 2.1089583333333333,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH02",
+    "montage_frame": 90,
+    "mean_absolute_pixel_error": 2.0223958333333334,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH03",
+    "montage_frame": 150,
+    "mean_absolute_pixel_error": 2.0419785236625514,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH04",
+    "montage_frame": 210,
+    "mean_absolute_pixel_error": 2.062856224279835,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH05",
+    "montage_frame": 270,
+    "mean_absolute_pixel_error": 1.8911072530864197,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH06",
+    "montage_frame": 330,
+    "mean_absolute_pixel_error": 2.0382568158436216,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH07",
+    "montage_frame": 390,
+    "mean_absolute_pixel_error": 2.0951195987654323,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH08",
+    "montage_frame": 450,
+    "mean_absolute_pixel_error": 2.015201903292181,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH09",
+    "montage_frame": 510,
+    "mean_absolute_pixel_error": 1.9856790123456791,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH10",
+    "montage_frame": 570,
+    "mean_absolute_pixel_error": 2.074718364197531,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH11",
+    "montage_frame": 630,
+    "mean_absolute_pixel_error": 2.035172968106996,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH12",
+    "montage_frame": 690,
+    "mean_absolute_pixel_error": 2.046005015432099,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH13",
+    "montage_frame": 750,
+    "mean_absolute_pixel_error": 1.97992862654321,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH14",
+    "montage_frame": 810,
+    "mean_absolute_pixel_error": 2.1336117541152264,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH15",
+    "montage_frame": 870,
+    "mean_absolute_pixel_error": 2.182892232510288,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH16",
+    "montage_frame": 930,
+    "mean_absolute_pixel_error": 1.8753337191358024,
+    "status": "PASS"
+  },
+  {
+    "shot": "SH17",
+    "montage_frame": 990,
+    "mean_absolute_pixel_error": 1.8272421553497942,
+    "status": "PASS"
+  }
+]

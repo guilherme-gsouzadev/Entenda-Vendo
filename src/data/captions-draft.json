@@ -1,0 +1,800 @@
+[
+  {
+    "shot": "SH01",
+    "startSec": 0,
+    "endSec": 2.125,
+    "text": "Imagine uma urna com cinco bolas. Qual é"
+  },
+  {
+    "shot": "SH01",
+    "startSec": 2.125,
+    "endSec": 4.25,
+    "text": "a chance?"
+  },
+  {
+    "shot": "SH02",
+    "startSec": 5,
+    "endSec": 8.167,
+    "text": "Três bolas são azuis e duas são vermelhas."
+  },
+  {
+    "shot": "SH02",
+    "startSec": 8.167,
+    "endSec": 11.333,
+    "text": "Você precisa tirar azul para ganhar. Sem fazer"
+  },
+  {
+    "shot": "SH02",
+    "startSec": 11.333,
+    "endSec": 14.5,
+    "text": "a conta, quais resultados parecem mais prováveis? Aqui"
+  },
+  {
+    "shot": "SH02",
+    "startSec": 14.5,
+    "endSec": 17.667,
+    "text": "ninguém retirou nada: cinco bolas continuam disponíveis. Vamos"
+  },
+  {
+    "shot": "SH02",
+    "startSec": 17.667,
+    "endSec": 20.833,
+    "text": "entender como transformar essa intuição em uma chance"
+  },
+  {
+    "shot": "SH02",
+    "startSec": 20.833,
+    "endSec": 24,
+    "text": "matemática."
+  },
+  {
+    "shot": "SH03",
+    "startSec": 25,
+    "endSec": 29,
+    "text": "Vamos organizar as possibilidades. Aqui estão cinco bolas"
+  },
+  {
+    "shot": "SH03",
+    "startSec": 29,
+    "endSec": 33,
+    "text": "que poderiam sair. Se buscamos azul, três resultados"
+  },
+  {
+    "shot": "SH03",
+    "startSec": 33,
+    "endSec": 37,
+    "text": "são favoráveis. Ao todo, são cinco possíveis. Por"
+  },
+  {
+    "shot": "SH03",
+    "startSec": 37,
+    "endSec": 41,
+    "text": "isso escrevemos três sobre cinco. Primeiro contamos; depois"
+  },
+  {
+    "shot": "SH03",
+    "startSec": 41,
+    "endSec": 45,
+    "text": "nasce a fração. Essa ordem importa: a fórmula"
+  },
+  {
+    "shot": "SH03",
+    "startSec": 45,
+    "endSec": 49,
+    "text": "é uma tradução do cenário."
+  },
+  {
+    "shot": "SH04",
+    "startSec": 50,
+    "endSec": 53.625,
+    "text": "A fração três quintos também pode ser escrita"
+  },
+  {
+    "shot": "SH04",
+    "startSec": 53.625,
+    "endSec": 57.25,
+    "text": "como sessenta por cento. Não é preciso decorar"
+  },
+  {
+    "shot": "SH04",
+    "startSec": 57.25,
+    "endSec": 60.875,
+    "text": "esse número, pois basta dividir três por cinco."
+  },
+  {
+    "shot": "SH04",
+    "startSec": 60.875,
+    "endSec": 64.5,
+    "text": "Mas cuidado: essa porcentagem só descreve o primeiro"
+  },
+  {
+    "shot": "SH04",
+    "startSec": 64.5,
+    "endSec": 68.125,
+    "text": "sorteio nessa urna, enquanto ainda temos três azuis"
+  },
+  {
+    "shot": "SH04",
+    "startSec": 68.125,
+    "endSec": 71.75,
+    "text": "e duas vermelhas. Se os objetos mudarem, devemos"
+  },
+  {
+    "shot": "SH04",
+    "startSec": 71.75,
+    "endSec": 75.375,
+    "text": "contar tudo novamente. Guarde essa ideia; ela será"
+  },
+  {
+    "shot": "SH04",
+    "startSec": 75.375,
+    "endSec": 79,
+    "text": "decisiva daqui a pouco."
+  },
+  {
+    "shot": "SH05",
+    "startSec": 80,
+    "endSec": 83.778,
+    "text": "Agora troque a urna por um dado comum"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 83.778,
+    "endSec": 87.556,
+    "text": "de seis faces, todas com a mesma chance"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 87.556,
+    "endSec": 91.333,
+    "text": "de sair. Em uma jogada, os resultados possíveis"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 91.333,
+    "endSec": 95.111,
+    "text": "são um, dois, três, quatro, cinco e seis."
+  },
+  {
+    "shot": "SH05",
+    "startSec": 95.111,
+    "endSec": 98.889,
+    "text": "Esse conjunto completo recebe o nome de espaço"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 98.889,
+    "endSec": 102.667,
+    "text": "amostral. É o primeiro desenho que devemos construir"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 102.667,
+    "endSec": 106.444,
+    "text": "antes de resolver uma questão: quais resultados podem"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 106.444,
+    "endSec": 110.222,
+    "text": "acontecer? Não confunda o espaço amostral com os"
+  },
+  {
+    "shot": "SH05",
+    "startSec": 110.222,
+    "endSec": 114,
+    "text": "resultados que desejamos."
+  },
+  {
+    "shot": "SH06",
+    "startSec": 115,
+    "endSec": 118.778,
+    "text": "Suponha que a questão peça um número par."
+  },
+  {
+    "shot": "SH06",
+    "startSec": 118.778,
+    "endSec": 122.556,
+    "text": "Entre os seis resultados possíveis, apenas dois, quatro"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 122.556,
+    "endSec": 126.333,
+    "text": "e seis atendem ao pedido. São três casos"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 126.333,
+    "endSec": 130.111,
+    "text": "favoráveis em seis possíveis, portanto três sextos, que"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 130.111,
+    "endSec": 133.889,
+    "text": "simplifica para um meio. Em porcentagem, cinquenta por"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 133.889,
+    "endSec": 137.667,
+    "text": "cento. O mesmo dado pode gerar questões diferentes"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 137.667,
+    "endSec": 141.444,
+    "text": "porque muda o evento de interesse. Nosso espaço"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 141.444,
+    "endSec": 145.222,
+    "text": "amostral continua com seis resultados; o que muda"
+  },
+  {
+    "shot": "SH06",
+    "startSec": 145.222,
+    "endSec": 149,
+    "text": "é a seleção dos favoráveis."
+  },
+  {
+    "shot": "SH07",
+    "startSec": 150,
+    "endSec": 154.889,
+    "text": "E quando aparece a palavra ou? Vamos perguntar"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 154.889,
+    "endSec": 159.778,
+    "text": "a chance de o dado mostrar um ou"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 159.778,
+    "endSec": 164.667,
+    "text": "seis. O resultado um atende à condição, e"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 164.667,
+    "endSec": 169.556,
+    "text": "o resultado seis também. Basta destacar os dois"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 169.556,
+    "endSec": 174.444,
+    "text": "cartões no conjunto. Nesse exemplo, eles não podem"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 174.444,
+    "endSec": 179.333,
+    "text": "ocorrer ao mesmo tempo em uma jogada. A"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 179.333,
+    "endSec": 184.222,
+    "text": "união de possibilidades significa olhar para os dois"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 184.222,
+    "endSec": 189.111,
+    "text": "resultados que servem, sem contar nenhum deles duas"
+  },
+  {
+    "shot": "SH07",
+    "startSec": 189.111,
+    "endSec": 194,
+    "text": "vezes."
+  },
+  {
+    "shot": "SH08",
+    "startSec": 195,
+    "endSec": 199.889,
+    "text": "Temos, então, dois casos favoráveis entre os seis"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 199.889,
+    "endSec": 204.778,
+    "text": "resultados do dado. Dois sextos, ou um terço."
+  },
+  {
+    "shot": "SH08",
+    "startSec": 204.778,
+    "endSec": 209.667,
+    "text": "A palavra ou costuma indicar uma reunião de"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 209.667,
+    "endSec": 214.556,
+    "text": "possibilidades, mas não significa simplesmente somar tudo sem"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 214.556,
+    "endSec": 219.444,
+    "text": "pensar. Se dois eventos puderem ocorrer juntos, a"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 219.444,
+    "endSec": 224.333,
+    "text": "interseção exigirá cuidado para não contar o mesmo"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 224.333,
+    "endSec": 229.222,
+    "text": "resultado duas vezes. Aqui isso não acontece: em"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 229.222,
+    "endSec": 234.111,
+    "text": "uma única jogada, o dado não mostra um"
+  },
+  {
+    "shot": "SH08",
+    "startSec": 234.111,
+    "endSec": 239,
+    "text": "e seis simultaneamente."
+  },
+  {
+    "shot": "SH09",
+    "startSec": 240,
+    "endSec": 245.5,
+    "text": "Passemos para a palavra e. Imagine uma moeda"
+  },
+  {
+    "shot": "SH09",
+    "startSec": 245.5,
+    "endSec": 251,
+    "text": "equilibrada, lançada duas vezes. A primeira jogada pode"
+  },
+  {
+    "shot": "SH09",
+    "startSec": 251,
+    "endSec": 256.5,
+    "text": "dar cara ou coroa. Só depois acontece a"
+  },
+  {
+    "shot": "SH09",
+    "startSec": 256.5,
+    "endSec": 262,
+    "text": "segunda jogada. Essa sequência é importante: não estamos"
+  },
+  {
+    "shot": "SH09",
+    "startSec": 262,
+    "endSec": 267.5,
+    "text": "escolhendo qualquer resultado em uma lista, mas percorrendo"
+  },
+  {
+    "shot": "SH09",
+    "startSec": 267.5,
+    "endSec": 273,
+    "text": "etapas. Vamos desenhar o primeiro ponto de decisão."
+  },
+  {
+    "shot": "SH09",
+    "startSec": 273,
+    "endSec": 278.5,
+    "text": "A partir dele, cada possibilidade da primeira jogada"
+  },
+  {
+    "shot": "SH09",
+    "startSec": 278.5,
+    "endSec": 284,
+    "text": "se ramifica novamente na segunda."
+  },
+  {
+    "shot": "SH10",
+    "startSec": 285,
+    "endSec": 289.9,
+    "text": "A árvore completa tem quatro caminhos: cara e"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 289.9,
+    "endSec": 294.8,
+    "text": "cara; cara e coroa; coroa e cara; coroa"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 294.8,
+    "endSec": 299.7,
+    "text": "e coroa. Todos são igualmente prováveis para moedas"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 299.7,
+    "endSec": 304.6,
+    "text": "justas e jogadas independentes. Se queremos cara na"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 304.6,
+    "endSec": 309.5,
+    "text": "primeira e coroa na segunda, acompanhamos um caminho"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 309.5,
+    "endSec": 314.4,
+    "text": "específico. A chance de cara é um meio."
+  },
+  {
+    "shot": "SH10",
+    "startSec": 314.4,
+    "endSec": 319.3,
+    "text": "Depois, a chance de coroa também é um"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 319.3,
+    "endSec": 324.2,
+    "text": "meio. Multiplicamos um meio por um meio e"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 324.2,
+    "endSec": 329.1,
+    "text": "obtemos um quarto. Multiplicar aqui representa percorrer etapas"
+  },
+  {
+    "shot": "SH10",
+    "startSec": 329.1,
+    "endSec": 334,
+    "text": "sucessivas."
+  },
+  {
+    "shot": "SH11",
+    "startSec": 335,
+    "endSec": 338.222,
+    "text": "Agora vem uma mudança que costuma derrubar quem"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 338.222,
+    "endSec": 341.444,
+    "text": "só memoriza números. Voltamos à urna original: três"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 341.444,
+    "endSec": 344.667,
+    "text": "bolas azuis e duas vermelhas. Na primeira retirada,"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 344.667,
+    "endSec": 347.889,
+    "text": "a chance de azul é três quintos. Mas"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 347.889,
+    "endSec": 351.111,
+    "text": "a questão diz sem reposição. Isso quer dizer"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 351.111,
+    "endSec": 354.333,
+    "text": "que a bola retirada não volta para dentro"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 354.333,
+    "endSec": 357.556,
+    "text": "da urna. Observe a ação. Retiramos uma única"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 357.556,
+    "endSec": 360.778,
+    "text": "bola azul, e ela sai do conjunto de"
+  },
+  {
+    "shot": "SH11",
+    "startSec": 360.778,
+    "endSec": 364,
+    "text": "possibilidades para o próximo sorteio."
+  },
+  {
+    "shot": "SH12",
+    "startSec": 365,
+    "endSec": 369.889,
+    "text": "Olhe o estado depois da retirada. Dentro da"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 369.889,
+    "endSec": 374.778,
+    "text": "urna restam exatamente duas bolas azuis e duas"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 374.778,
+    "endSec": 379.667,
+    "text": "vermelhas. A bola azul retirada continua visível do"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 379.667,
+    "endSec": 384.556,
+    "text": "lado de fora, mas não pode mais ser"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 384.556,
+    "endSec": 389.444,
+    "text": "sorteada. Agora o total é quatro, e só"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 389.444,
+    "endSec": 394.333,
+    "text": "duas azuis permanecem disponíveis. Por isso, sabendo que"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 394.333,
+    "endSec": 399.222,
+    "text": "a primeira foi azul, a chance de azul"
+  },
+  {
+    "shot": "SH12",
+    "startSec": 399.222,
+    "endSec": 404.111,
+    "text": "na segunda é dois quartos, não três quintos."
+  },
+  {
+    "shot": "SH12",
+    "startSec": 404.111,
+    "endSec": 409,
+    "text": "O cenário mudou, então a probabilidade mudou."
+  },
+  {
+    "shot": "SH13",
+    "startSec": 410,
+    "endSec": 413.778,
+    "text": "Considere agora duas retiradas sem reposição e a"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 413.778,
+    "endSec": 417.556,
+    "text": "pergunta: qual é a chance de sair pelo"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 417.556,
+    "endSec": 421.333,
+    "text": "menos uma vermelha? Podemos desenhar os tipos de"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 421.333,
+    "endSec": 425.111,
+    "text": "sequência que atendem ao pedido: azul e vermelha;"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 425.111,
+    "endSec": 428.889,
+    "text": "vermelha e azul; ou duas vermelhas. São três"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 428.889,
+    "endSec": 432.667,
+    "text": "caminhos, mas eles não têm necessariamente a mesma"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 432.667,
+    "endSec": 436.444,
+    "text": "probabilidade. Somar probabilidades de caminhos exige calcular cada"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 436.444,
+    "endSec": 440.222,
+    "text": "uma corretamente. Existe uma maneira mais curta de"
+  },
+  {
+    "shot": "SH13",
+    "startSec": 440.222,
+    "endSec": 444,
+    "text": "raciocinar, sem perder a precisão."
+  },
+  {
+    "shot": "SH14",
+    "startSec": 445,
+    "endSec": 448.545,
+    "text": "Pergunte qual é o contrário de sair pelo"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 448.545,
+    "endSec": 452.091,
+    "text": "menos uma vermelha. É não sair nenhuma vermelha;"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 452.091,
+    "endSec": 455.636,
+    "text": "ou seja, sair duas azuis. Na primeira retirada,"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 455.636,
+    "endSec": 459.182,
+    "text": "a chance de azul é três quintos. Se"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 459.182,
+    "endSec": 462.727,
+    "text": "a primeira foi azul, a segunda azul tem"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 462.727,
+    "endSec": 466.273,
+    "text": "chance de dois quartos. Multiplicando, temos seis vinte"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 466.273,
+    "endSec": 469.818,
+    "text": "avos: trinta por cento. Esse é o evento"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 469.818,
+    "endSec": 473.364,
+    "text": "contrário. Então, a chance de pelo menos uma"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 473.364,
+    "endSec": 476.909,
+    "text": "vermelha é um menos trinta por cento, exatamente"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 476.909,
+    "endSec": 480.455,
+    "text": "setenta por cento. Essa é a ideia de"
+  },
+  {
+    "shot": "SH14",
+    "startSec": 480.455,
+    "endSec": 484,
+    "text": "complemento."
+  },
+  {
+    "shot": "SH15",
+    "startSec": 485,
+    "endSec": 488.8,
+    "text": "Sua vez. A urna agora tem quatro bolas"
+  },
+  {
+    "shot": "SH15",
+    "startSec": 488.8,
+    "endSec": 492.6,
+    "text": "azuis e três vermelhas. Em duas retiradas sem"
+  },
+  {
+    "shot": "SH15",
+    "startSec": 492.6,
+    "endSec": 496.4,
+    "text": "reposição, qual é a chance de pelo menos"
+  },
+  {
+    "shot": "SH15",
+    "startSec": 496.4,
+    "endSec": 500.2,
+    "text": "uma vermelha? Pense no contrário. Pause, se precisar,"
+  },
+  {
+    "shot": "SH15",
+    "startSec": 500.2,
+    "endSec": 504,
+    "text": "antes da resolução."
+  },
+  {
+    "shot": "SH16",
+    "startSec": 505,
+    "endSec": 509.25,
+    "text": "O contrário de pelo menos uma vermelha é"
+  },
+  {
+    "shot": "SH16",
+    "startSec": 509.25,
+    "endSec": 513.5,
+    "text": "sair duas azuis. Primeiro, quatro azuis em sete"
+  },
+  {
+    "shot": "SH16",
+    "startSec": 513.5,
+    "endSec": 517.75,
+    "text": "bolas. Depois, três azuis em seis. Multiplicamos quatro"
+  },
+  {
+    "shot": "SH16",
+    "startSec": 517.75,
+    "endSec": 522,
+    "text": "sétimos por três sextos e obtemos dois sétimos."
+  },
+  {
+    "shot": "SH16",
+    "startSec": 522,
+    "endSec": 526.25,
+    "text": "Esse é o contrário. Agora calculamos um menos"
+  },
+  {
+    "shot": "SH16",
+    "startSec": 526.25,
+    "endSec": 530.5,
+    "text": "dois sétimos: cinco sétimos, aproximadamente setenta e um"
+  },
+  {
+    "shot": "SH16",
+    "startSec": 530.5,
+    "endSec": 534.75,
+    "text": "vírgula quatro por cento. A conta acompanha a"
+  },
+  {
+    "shot": "SH16",
+    "startSec": 534.75,
+    "endSec": 539,
+    "text": "mudança da urna."
+  },
+  {
+    "shot": "SH17",
+    "startSec": 540,
+    "endSec": 543.167,
+    "text": "Recapitulando: espaço amostral mostra tudo o que pode"
+  },
+  {
+    "shot": "SH17",
+    "startSec": 543.167,
+    "endSec": 546.333,
+    "text": "acontecer. Casos favoráveis mostram o que interessa. O"
+  },
+  {
+    "shot": "SH17",
+    "startSec": 546.333,
+    "endSec": 549.5,
+    "text": "evento e acompanha um caminho de etapas. E"
+  },
+  {
+    "shot": "SH17",
+    "startSec": 549.5,
+    "endSec": 552.667,
+    "text": "o complemento às vezes transforma uma pergunta difícil"
+  },
+  {
+    "shot": "SH17",
+    "startSec": 552.667,
+    "endSec": 555.833,
+    "text": "em uma conta mais curta. Probabilidade não começa"
+  },
+  {
+    "shot": "SH17",
+    "startSec": 555.833,
+    "endSec": 559,
+    "text": "na fórmula. Começa nas possibilidades. Entenda vendo."
+  }
+]

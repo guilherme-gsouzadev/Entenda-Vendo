@@ -1,0 +1,20 @@
+RECOGNIZED [ 'ProbabilidadeConcursos', 'EntendaVendoThumbnail' ]
+CAPTURE PASS /workspace/scratch/aab6ed4c5936/validated/entenda-vendo-remotion-mvp01/out/qa
+VIDEO SH01 captured 26
+VIDEO SH02 captured 94
+VIDEO SH03 captured 234
+VIDEO SH04 captured 292
+VIDEO SH05 captured 370
+VIDEO SH06 captured 458
+VIDEO SH07 captured 511
+VIDEO SH08 captured 537
+VIDEO SH09 captured 615
+VIDEO SH10 captured 724
+VIDEO SH11 captured 812
+VIDEO SH12 captured 848
+VIDEO SH13 captured 874
+VIDEO SH14 captured 994
+VIDEO SH15 captured 1020
+VIDEO SH16 captured 1046
+VIDEO SH17 captured 1206
+VIDEO PASS /workspace/scratch/aab6ed4c5936/validated/entenda-vendo-remotion-mvp01/out/qa/probabilidade-preliminar-silencioso.mp4

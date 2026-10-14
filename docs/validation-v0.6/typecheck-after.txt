@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+src/Root.tsx(10,101): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: SequenceProps & RefAttributes<HTMLDivElement>, context?: any): string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<...>> | ... 4 more ... | undefined', gave the following error.
+    Type 'string | number' is not assignable to type 'string | undefined'.
+      Type 'number' is not assignable to type 'string'.
+  Overload 2 of 2, '(props: SequenceProps & RefAttributes<HTMLDivElement>): string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | ... 4 more ... | undefined', gave the following error.
+    Type 'string | number' is not assignable to type 'string | undefined'.
+      Type 'number' is not assignable to type 'string'.
+src/Root.tsx(11,16): error TS2322: Type 'string | number' is not assignable to type 'string'.
+  Type 'number' is not assignable to type 'string'.
+src/Root.tsx(11,29): error TS2322: Type 'string | number' is not assignable to type 'string'.
+  Type 'number' is not assignable to type 'string'.

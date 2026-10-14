@@ -1,0 +1,149 @@
+--- v0.5/package.json
++++ v0.6/package.json
+@@ -1,18 +1,21 @@
+ {
+   "name": "entenda-vendo-mvp01-probabilidade",
+-  "version": "0.5.0",
++  "version": "0.6.0",
+   "private": true,
+   "description": "Entenda Vendo — Probabilidade para Concursos / Editorial Visual Storytelling",
+   "scripts": {
+     "studio": "remotion studio src/index.ts",
+     "compositions": "remotion compositions src/index.ts",
+-    "build": "remotion bundle src/index.ts --out-dir out/bundle",
++    "build": "remotion bundle src/index.ts --out-dir out/bundle --bundle-cache=false",
+     "still": "remotion still src/index.ts EntendaVendoThumbnail out/thumbnail-remotion.png",
+     "render": "remotion render src/index.ts ProbabilidadeConcursos out/probabilidade.mp4 --codec=h264",
+     "render:preview": "remotion render src/index.ts ProbabilidadeConcursos out/preview.mp4 --frames=10860-11160 --codec=h264 --scale=0.5",
+     "test": "node --test tests/*.test.mjs",
+     "qa": "node scripts/qa.mjs",
+-    "subtitles": "node scripts/make-captions.mjs"
++    "subtitles": "node scripts/make-captions.mjs",
++    "typecheck": "tsc --noEmit",
++    "qa:browser": "npm run build && node scripts/browser-qa.mjs",
++    "render:browser": "npm run build && node scripts/browser-qa.mjs --render"
+   },
+   "dependencies": {
+     "@remotion/cli": "4.0.535",
+@@ -23,6 +26,7 @@
+   "devDependencies": {
+     "@types/react": "19.2.0",
+     "@types/react-dom": "19.2.0",
+-    "typescript": "5.9.3"
++    "typescript": "5.9.3",
++    "playwright": "1.62.1"
+   }
+ }
+--- v0.5/src/data/timeline.mjs
++++ v0.6/src/data/timeline.mjs
+@@ -1,9 +1,12 @@
+ export const FPS=30;
+-export const SCENE_TIMES=[
++/** @type {[string,number,number][]} */
++const sceneRows=[
+  ['S01',0,25], ['S02',25,80], ['S03',80,150], ['S04',150,240],
+  ['S05',240,335], ['S06',335,410], ['S07',410,485], ['S08',485,540], ['S09',540,560]
+-].map(([id,start,end])=>({id,start,end,duration:end-start}));
+-export const SHOTS=[
++];
++export const SCENE_TIMES=sceneRows.map(([id,start,end])=>({id,start,end,duration:end-start}));
++/** @type {[string,string,number,number][]} */
++const shotRows=[
+  ['SH01','S01',0,5], ['SH02','S01',5,25],
+  ['SH03','S02',25,50], ['SH04','S02',50,80],
+  ['SH05','S03',80,115], ['SH06','S03',115,150],
+@@ -13,6 +16,7 @@
+  ['SH13','S07',410,445], ['SH14','S07',445,485],
+  ['SH15','S08',485,505], ['SH16','S08',505,540],
+  ['SH17','S09',540,560]
+-].map(([id,scene,start,end])=>({id,scene,start,end,duration:end-start,from:start*FPS,durationInFrames:(end-start)*FPS}));
++];
++export const SHOTS=shotRows.map(([id,scene,start,end])=>({id,scene,start,end,duration:end-start,from:start*FPS,durationInFrames:(end-start)*FPS}));
+ export const TOTAL_SECONDS=560;
+ export const TOTAL_FRAMES=FPS*TOTAL_SECONDS;
+--- v0.5/src/components/Artwork.tsx
++++ v0.6/src/components/Artwork.tsx
+@@ -1,6 +1,7 @@
+ import React from 'react';
+ import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+ import {urns} from '../data/math.mjs';
++import {urnLayouts as layouts,removedPosition} from '../data/withdrawal.mjs';
+ 
+ export const C={bg:'#F6F4EF', ink:'#172B38', muted:'#667782', blue:'#3789D4', red:'#E66E60', gold:'#F0B94D', aqua:'#DDEEF1', line:'#BBC9CD', card:'#FFFFFF', green:'#157A68'} as const;
+ export const font='Inter, Arial, sans-serif';
+@@ -22,26 +23,22 @@
+  <rect x="-115" y="-33" rx="24" width="230" height="66" fill={C.card} stroke="#DBE5E6" strokeWidth="3"/>
+  <text y="10" fontFamily={font} textAnchor="middle" fontSize="29" fontWeight="700" fill={color}>{children}</text>
+  </g>;
+-export const Ball:React.FC<{x:number;y:number;r?:number;kind:'blue'|'red';opacity?:number}>=({x,y,r=38,kind,opacity=1})=><g opacity={opacity}>
++export const Ball:React.FC<{x:number;y:number;r?:number;kind:'blue'|'red';opacity?:number}>=({x,y,r=38,kind,opacity=1})=><g data-ball={kind} opacity={opacity}>
+  <ellipse cx={x+5} cy={y+r*0.8} rx={r*0.94} ry={r*0.27} fill="#143246" opacity="0.16" />
+  <circle cx={x} cy={y} r={r} fill={kind==='blue'?C.blue:C.red} stroke={kind==='blue'?'#2262A2':'#C65349'} strokeWidth={r*.06}/>
+  <ellipse cx={x-r*.3} cy={y-r*.33} rx={r*.24} ry={r*.14} transform={`rotate(-25 ${x-r*.3} ${y-r*.33})`} fill="#FFFFFF" opacity=".45" />
+  </g>;
+-const layouts:Record<number,[number,number][]>= {
+- 4:[[-85,124],[85,124],[-85,221],[85,221]],
+- 5:[[-118,124],[0,124],[118,124],[-61,220],[61,220]],
+- 7:[[-113,102],[0,102],[113,102],[-125,196],[-42,196],[42,196],[125,196]]
+-};
+ export const Urn:React.FC<{x:number;y:number;blue:number;red:number;scale?:number;showRemoved?:boolean;removedProgress?:number;removedBallX?:number;removedBallY?:number}>=({x,y,blue,red,scale=1,showRemoved=false,removedProgress=1,removedBallX=300,removedBallY=-55})=>{
+  const total=blue+red;
+  if(!(total in layouts))throw Error('No registered urn layout for '+total);
+  const positions=layouts[total];
+- return <g transform={`translate(${x},${y}) scale(${scale})`}>
++ const removed=removedPosition(removedProgress,removedBallX,removedBallY);
++ return <g data-urn="true" data-inside-blue={blue} data-inside-red={red} transform={`translate(${x},${y}) scale(${scale})`}>
+   <path d="M-205 45 L-175 289 Q0 344 175 289 L205 45" fill="#E8F4F5" opacity=".93" stroke="#66949E" strokeWidth="12" strokeLinejoin="round"/>
+   {positions.map(([px,py],i)=><Ball key={i} x={px} y={py} kind={i<blue?'blue':'red'} r={34}/>) }
+   <path d="M-205 45 L-175 289 Q0 344 175 289 L205 45" fill="none" stroke="#517F8B" strokeWidth="9"/>
+   <ellipse cx="0" cy="45" rx="209" ry="22" fill="#E4EFF0" stroke="#5F939E" strokeWidth="11"/>
+-  {showRemoved&&<Ball x={interpolate(removedProgress,[0,1],[0,removedBallX])} y={interpolate(removedProgress,[0,1],[130,removedBallY])} kind="blue" r={36}/>}
++  {showRemoved&&<Ball x={removed.x} y={removed.y} kind="blue" r={34}/>}
+  </g>;
+ };
+ /** Rig vetorial fixo: mesmo rosto/cabelo/corpo em todas as poses. */
+--- v0.5/src/scenes/Shots.tsx
++++ v0.6/src/scenes/Shots.tsx
+@@ -1,7 +1,8 @@
+ import React from 'react';
+ import {useCurrentFrame} from 'remotion';
+ import {Backdrop,Heading,Tag,Ball,Urn,Character,Fraction,Card,Die,Coin,Note,C,ease,font} from '../components/Artwork';
+-import {probability,urns} from '../data/math.mjs';
++import {urns} from '../data/math.mjs';
++import {withdrawal} from '../data/withdrawal.mjs';
+ 
+ const Big:React.FC<{x:number;y:number;children:string;color?:string;size?:number}>=({x,y,children,color=C.ink,size=86})=><text x={x} y={y} fill={color} fontWeight="820" fontSize={size} fontFamily={font} textAnchor="middle">{children}</text>;
+ const ResultRow:React.FC<{picked:number[];all?:number[];y?:number;opacity?:number}>=({picked,all=[1,2,3,4,5,6],y=500,opacity=1})=><g opacity={opacity}>
+@@ -24,25 +25,25 @@
+  </g>;
+ 
+ export const ShotVisual:React.FC<{id:string;section:string}>=({id,section})=>{
+- const f=useCurrentFrame(); const fade=ease(f,0,24);
++ const f=useCurrentFrame(); const fade=id==='SH12'?1:ease(f,0,24);
+  let content:React.ReactNode=null;
+  switch(id){
+  case 'SH01': content=<><Heading title="QUAL A CHANCE?" subtitle="Uma pergunta. Cinco possibilidades."/><Urn {...urns.before} x={820} y={395} scale={1.2}/><Character x={1320} y={500} pose="thinking" scale={1.08}/><Note x={860} y={860} size={36}>3 azuis · 2 vermelhas</Note></>;break;
+  case 'SH02': content=<><Heading title="E SE PRECISAR SAIR AZUL?" size={69}/><g transform={`translate(${(1-fade)*-70},0)`}><Urn {...urns.before} x={840} y={396} scale={1.23}/><Character x={1360} y={510} pose="pointing" scale={1.08}/></g><g opacity={ease(f,50,90)}><Tag x={840} y={872} color={C.blue}>AZUL</Tag></g></>;break;
+  case 'SH03':content=<><Heading title="DE ONDE VEM A FRAÇÃO?" size={72}/><BallsLine x={960} y={500}/><g opacity={ease(f,150,200)}><Note x={755} y={667} color={C.blue} size={35} bold>3 FAVORÁVEIS</Note><Note x={960} y={815} size={31}>5 RESULTADOS POSSÍVEIS</Note></g><g opacity={ease(f,450,510)}><Fraction x={1470} y={540} top={3} bottom={5} size={105}/></g></>;break;
+  case 'SH04':content=<><Heading title="ANTES DA CONTA: AS POSSIBILIDADES" size={64}/><BallsLine x={820} y={505} spread={130}/><g opacity={ease(f,55,85)}><Fraction x={1430} y={492} top={3} bottom={5} size={100}/><Big x={1600} y={560} children="= 60%" size={68} color={C.blue}/></g><Note x={940} y={820} size={37}>Probabilidade = casos favoráveis / casos possíveis</Note></>;break;
+- case 'SH05':content=<><Heading title="ESPAÇO AMOSTRAL" subtitle="O conjunto de todos os resultados possíveis"/><Die x={400} y={560}/><g opacity={ease(f,45,95)}><ResultRow picked={[]} y={535}/></g><Note x={960} y={873} size={35}>Um dado justo tem 6 resultados possíveis.</Note></>;break;
++ case 'SH05':content=<><Heading title="ESPAÇO AMOSTRAL" subtitle="O conjunto de todos os resultados possíveis"/><Die x={260} y={535}/><g opacity={ease(f,45,95)}><ResultRow picked={[]} y={535}/></g><Note x={960} y={873} size={35}>Um dado justo tem 6 resultados possíveis.</Note></>;break;
+  case 'SH06':content=<><Heading title="E SE EU QUISER UM NÚMERO PAR?" size={62}/><ResultRow picked={[2,4,6]} y={515}/><g opacity={ease(f,145,205)}><Big x={960} y={804} children="3/6 = 1/2 = 50%" size={74} color={C.blue}/></g></>;break;
+  case 'SH07':content=<><Heading title="OU REÚNE RESULTADOS" subtitle="No exemplo: sair 1 OU sair 6"/><ResultRow picked={[1,6]} y={520}/><g opacity={ease(f,45,70)}><path d="M490 670 Q960 850 1415 670" stroke={C.blue} strokeWidth="12" strokeLinecap="round" fill="none"/><Note x={960} y={810} size={34} color={C.blue} bold>Dois resultados que atendem à condição</Note></g></>;break;
+  case 'SH08':content=<><Heading title="1 OU 6" subtitle="São 2 resultados favoráveis entre 6 possíveis."/><ResultRow picked={[1,6]} y={480}/><Big x={970} y={826} children="2/6 = 1/3" size={90} color={C.blue}/><Note x={970} y={914} size={32}>Neste exemplo, contamos duas opções diferentes.</Note></>;break;
+  case 'SH09':content=<><Heading title="E É UM CAMINHO" subtitle="Duas jogadas independentes de uma moeda justa"/><Character x={530} y={488} pose="pointing" scale={1.0}/><Coin x={1040} y={555} label="C" r={92}/><g opacity={ease(f,80,130)}><path d="M1140 555 L1400 400 M1140 555 L1400 700" stroke="#AFBEC0" strokeWidth="12"/><Tag x={1450} y={390}>CARA</Tag><Tag x={1450} y={710}>COROA</Tag></g></>;break;
+- case 'SH10':content=<><Heading title="QUATRO CAMINHOS POSSÍVEIS" size={70}/><Tree reveal={ease(f,0,35)}/><g opacity={ease(f,350,420)}><Big x={1500} y={540} size={53} children="C → K" color={C.blue}/><Big x={1500} y={630} size={53} children="1/2 × 1/2 = 1/4"/></g><Note x={960} y={945} size={29}>Primeira jogada E segunda jogada</Note></>;break;
++ case 'SH10':content=<><Heading title="QUATRO CAMINHOS POSSÍVEIS" size={70}/><g transform="translate(80,140) scale(.85)"><Tree reveal={ease(f,0,35)}/></g><g opacity={ease(f,350,420)}><Big x={1500} y={540} size={53} children="C → K" color={C.blue}/><Big x={1500} y={630} size={53} children="1/2 × 1/2 = 1/4"/></g><Note x={960} y={945} size={29}>C = cara · K = coroa · Primeira E segunda jogada</Note></>;break;
+  case 'SH11':{
+- const extracted=f>=27*30;
+- const move=ease(f,27*30,29*30);
+- content=<><Heading title="SEM REPOSIÇÃO: ANTES" subtitle="Retiramos uma bola azul e não devolvemos"/><Urn x={830} y={402} blue={extracted?2:3} red={2} showRemoved={extracted} removedProgress={move} removedBallX={340} removedBallY={-50} scale={1.15}/><Character x={1415} y={510} pose="pointing" scale={1.02}/><Tag x={755} y={880}>3 / 5</Tag><Note x={1430} y={890} size={34}>5 bolas no início</Note></>;break;
++ const extracted=f>=withdrawal.start;
++ const move=ease(f,withdrawal.start,withdrawal.end);
++ content=<><Heading title="SEM REPOSIÇÃO: ANTES" subtitle="Retiramos uma bola azul e não devolvemos"/><Character x={1250} y={510} pose="neutral" scale={1.02}/><Urn x={withdrawal.urnX} y={withdrawal.urnY} blue={extracted?urns.after.blue:urns.before.blue} red={urns.before.red} showRemoved={extracted} removedProgress={move} removedBallX={withdrawal.targetX} removedBallY={withdrawal.targetY} scale={withdrawal.scale}/><Tag x={755} y={880}>3 / 5</Tag><Note x={1370} y={890} size={34}>5 bolas no início</Note></>;break;
+  }
+- case 'SH12': content=<><Heading title="SEM REPOSIÇÃO: DEPOIS" subtitle="A azul retirada está fora da urna"/><Urn x={810} y={404} {...urns.after} showRemoved removedBallX={330} removedBallY={-70} scale={1.15}/><Character x={1460} y={519} pose="pointing" scale={0.91}/><g opacity={ease(f,25,58)}><Tag x={705} y={870} color={C.blue}>2 / 4</Tag><Tag x={1432} y={874}>4 RESTANTES</Tag></g><Note x={955} y={972} size={30}>O espaço amostral diminuiu: 3/5 → 2/4.</Note></>;break;
++ case 'SH12': content=<><Heading title="SEM REPOSIÇÃO: DEPOIS" subtitle="A azul retirada está fora da urna"/><Character x={1250} y={510} pose="neutral" scale={1.02}/><Urn x={withdrawal.urnX} y={withdrawal.urnY} {...urns.after} showRemoved removedBallX={withdrawal.targetX} removedBallY={withdrawal.targetY} scale={withdrawal.scale}/><g opacity={ease(f,25,58)}><Tag x={755} y={880} color={C.blue}>2 / 4</Tag><Tag x={1370} y={880}>4 RESTANTES</Tag></g><Note x={955} y={972} size={30}>O espaço amostral diminuiu: 3/5 → 2/4.</Note></>;break;
+  case 'SH13':content=<><Heading title="PELO MENOS UMA VERMELHA..." size={69} subtitle="Três padrões de resultados servem à pergunta"/><PathCard x={550} y={553} first="B" second="R"/><PathCard x={960} y={553} first="R" second="B"/><PathCard x={1370} y={553} first="R" second="R"/><Character x={1600} y={730} pose="thinking" scale={0.68}/><Note x={960} y={861} size={30}>Caminhos diferentes não precisam ter a mesma probabilidade.</Note></>;break;
+  case 'SH14':content=<><Heading title="O CONTRÁRIO É MAIS SIMPLES" size={68}/><PathCard x={490} y={557} first="B" second="B" accent/><g opacity={ease(f,50,90)}><Big x={1120} y={450} size={53} children="P(duas azuis)"/><Big x={1120} y={540} size={60} children="3/5 × 2/4 = 30%" color={C.blue}/></g><g opacity={ease(f,200,250)}><Big x={1120} y={715} size={48} children="P(pelo menos uma vermelha)"/><Big x={1120} y={820} size={65} children="1 − 30% = 70%" color={C.green}/></g></>;break;
+  case 'SH15':content=<><Heading title="AGORA É COM VOCÊ" subtitle="Duas retiradas sem reposição"/><Urn x={815} y={410} {...urns.challenge} scale={1.12}/><Character x={1460} y={510} pose="thinking" scale={.96}/><Big x={960} y={890} size={43} children="4 AZUIS + 3 VERMELHAS"/><Note x={960} y={978} color={C.blue} size={36} bold>Qual a chance de pelo menos uma vermelha?</Note></>;break;

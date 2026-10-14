@@ -1,0 +1,45 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> entenda-vendo-mvp01-probabilidade@0.5.0 compositions
+> remotion compositions src/index.ts
+
+Bundling code        ━                  6%
+Bundling code        ━━━╸               21%
+Bundling code        ━━━━━╸             32%
+Bundling code        ━━━━━━━╸           43%
+Bundling code        ━━━━━━━━━╸         54%
+Bundling code        ━━━━━━━━━━━╸       65%
+Bundling code        ━━━━━━━━━━━━╸      70%
+Bundling code        ━━━━━━━━━━━━━╸     75%
+Bundling code        ━━━━━━━━━━━━━━     80%
+Bundling code        ━━━━━━━━━━━━━━━    85%
+Bundling code        ━━━━━━━━━━━━━━━━   91%
+Bundling code        ━━━━━━━━━━━━━━━━━╸ 98%
+Bundling code        ━━━━━━━━━━━━━━━━━━ 100%
+Bundled code         ━━━━━━━━━━━━━━━━━━ 10524ms
+⚡️ Cached bundle. Subsequent renders will be faster.
+Downloading Chrome Headless Shell https://www.remotion.dev/chrome-headless-shell
+Downloading from: https://remotion.media/chromium-headless-shell-linux-x64-157.0.8080.0.zip?clear
+Getting Headless Shell - 9.5 Mb/98.9 Mb
+Getting Headless Shell - 19.1 Mb/98.9 Mb
+Getting Headless Shell - 28.6 Mb/98.9 Mb
+Getting Headless Shell - 38.2 Mb/98.9 Mb
+Getting Headless Shell - 47.7 Mb/98.9 Mb
+Getting Headless Shell - 57.3 Mb/98.9 Mb
+Getting Headless Shell - 66.8 Mb/98.9 Mb
+Getting Headless Shell - 76.4 Mb/98.9 Mb
+Getting Headless Shell - 85.9 Mb/98.9 Mb
+Getting Headless Shell - 95.5 Mb/98.9 Mb
+Got Headless Shell
+
+SystemError [ERR_SYSTEM_ERROR]: A system error occurred: uv_interface_addresses returned Unknown system error 1 (Unknown system error 1)
+    at Object.networkInterfaces (node:os:218:16)
+    at getPortConfig (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/port-config.js:14:44)
+    at serveStatic (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/serve-static.js:57:56)
+    at prepareServer (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/prepare-server.js:71:91)
+    at makeOrReuseServer (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/prepare-server.js:113:55)
+    at /workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/get-compositions.js:128:48
+    at new Promise (<anonymous>)
+    at internalGetCompositionsRaw (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/get-compositions.js:121:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.internalGetCompositions (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/wrap-with-error-handling.js:8:20)

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "source": "Decoded MP4 pixels",
+  "frames_checked": 93,
+  "moving_frame_steps_over_0_4px": 58,
+  "stationary_max_drift_px": 0.0,
+  "cut_10949_to_10950_drift_px": 0.0,
+  "blue_components_per_frame": 3,
+  "red_components_per_frame": 2,
+  "media": [
+    {
+      "file": "probabilidade-preliminar-silencioso.mp4",
+      "bytes": 8566133,
+      "sha256": "60d45d40d7e3ebd0c123e2e8b016c5b7fd4842c109ae428b5b31662ebff0efd2"
+    },
+    {
+      "file": "retirada-sem-reposicao.mp4",
+      "bytes": 101234,
+      "sha256": "8281a14e8071d3f4d77d7202bace565b15740e68921e9c3d75d239d59e0cec3d"
+    },
+    {
+      "file": "amostras-17-shots.mp4",
+      "bytes": 427447,
+      "sha256": "0720084bbb06f0ad254ef9a615a791e595da0c6d612743b8d2c6c4fc14b30886"
+    }
+  ]
+}

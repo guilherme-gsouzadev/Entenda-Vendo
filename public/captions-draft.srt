@@ -1,0 +1,531 @@
+1
+00:00:00,000 --> 00:00:02,125
+Imagine uma urna com cinco bolas. Qual é
+
+2
+00:00:02,125 --> 00:00:04,250
+a chance?
+
+3
+00:00:05,000 --> 00:00:08,167
+Três bolas são azuis e duas são vermelhas.
+
+4
+00:00:08,167 --> 00:00:11,333
+Você precisa tirar azul para ganhar. Sem fazer
+
+5
+00:00:11,333 --> 00:00:14,500
+a conta, quais resultados parecem mais prováveis? Aqui
+
+6
+00:00:14,500 --> 00:00:17,667
+ninguém retirou nada: cinco bolas continuam disponíveis. Vamos
+
+7
+00:00:17,667 --> 00:00:20,833
+entender como transformar essa intuição em uma chance
+
+8
+00:00:20,833 --> 00:00:24,000
+matemática.
+
+9
+00:00:25,000 --> 00:00:29,000
+Vamos organizar as possibilidades. Aqui estão cinco bolas
+
+10
+00:00:29,000 --> 00:00:33,000
+que poderiam sair. Se buscamos azul, três resultados
+
+11
+00:00:33,000 --> 00:00:37,000
+são favoráveis. Ao todo, são cinco possíveis. Por
+
+12
+00:00:37,000 --> 00:00:41,000
+isso escrevemos três sobre cinco. Primeiro contamos; depois
+
+13
+00:00:41,000 --> 00:00:45,000
+nasce a fração. Essa ordem importa: a fórmula
+
+14
+00:00:45,000 --> 00:00:49,000
+é uma tradução do cenário.
+
+15
+00:00:50,000 --> 00:00:53,625
+A fração três quintos também pode ser escrita
+
+16
+00:00:53,625 --> 00:00:57,250
+como sessenta por cento. Não é preciso decorar
+
+17
+00:00:57,250 --> 00:01:00,875
+esse número, pois basta dividir três por cinco.
+
+18
+00:01:00,875 --> 00:01:04,500
+Mas cuidado: essa porcentagem só descreve o primeiro
+
+19
+00:01:04,500 --> 00:01:08,125
+sorteio nessa urna, enquanto ainda temos três azuis
+
+20
+00:01:08,125 --> 00:01:11,750
+e duas vermelhas. Se os objetos mudarem, devemos
+
+21
+00:01:11,750 --> 00:01:15,375
+contar tudo novamente. Guarde essa ideia; ela será
+
+22
+00:01:15,375 --> 00:01:19,000
+decisiva daqui a pouco.
+
+23
+00:01:20,000 --> 00:01:23,778
+Agora troque a urna por um dado comum
+
+24
+00:01:23,778 --> 00:01:27,556
+de seis faces, todas com a mesma chance
+
+25
+00:01:27,556 --> 00:01:31,333
+de sair. Em uma jogada, os resultados possíveis
+
+26
+00:01:31,333 --> 00:01:35,111
+são um, dois, três, quatro, cinco e seis.
+
+27
+00:01:35,111 --> 00:01:38,889
+Esse conjunto completo recebe o nome de espaço
+
+28
+00:01:38,889 --> 00:01:42,667
+amostral. É o primeiro desenho que devemos construir
+
+29
+00:01:42,667 --> 00:01:46,444
+antes de resolver uma questão: quais resultados podem
+
+30
+00:01:46,444 --> 00:01:50,222
+acontecer? Não confunda o espaço amostral com os
+
+31
+00:01:50,222 --> 00:01:54,000
+resultados que desejamos.
+
+32
+00:01:55,000 --> 00:01:58,778
+Suponha que a questão peça um número par.
+
+33
+00:01:58,778 --> 00:02:02,556
+Entre os seis resultados possíveis, apenas dois, quatro
+
+34
+00:02:02,556 --> 00:02:06,333
+e seis atendem ao pedido. São três casos
+
+35
+00:02:06,333 --> 00:02:10,111
+favoráveis em seis possíveis, portanto três sextos, que
+
+36
+00:02:10,111 --> 00:02:13,889
+simplifica para um meio. Em porcentagem, cinquenta por
+
+37
+00:02:13,889 --> 00:02:17,667
+cento. O mesmo dado pode gerar questões diferentes
+
+38
+00:02:17,667 --> 00:02:21,444
+porque muda o evento de interesse. Nosso espaço
+
+39
+00:02:21,444 --> 00:02:25,222
+amostral continua com seis resultados; o que muda
+
+40
+00:02:25,222 --> 00:02:29,000
+é a seleção dos favoráveis.
+
+41
+00:02:30,000 --> 00:02:34,889
+E quando aparece a palavra ou? Vamos perguntar
+
+42
+00:02:34,889 --> 00:02:39,778
+a chance de o dado mostrar um ou
+
+43
+00:02:39,778 --> 00:02:44,667
+seis. O resultado um atende à condição, e
+
+44
+00:02:44,667 --> 00:02:49,556
+o resultado seis também. Basta destacar os dois
+
+45
+00:02:49,556 --> 00:02:54,444
+cartões no conjunto. Nesse exemplo, eles não podem
+
+46
+00:02:54,444 --> 00:02:59,333
+ocorrer ao mesmo tempo em uma jogada. A
+
+47
+00:02:59,333 --> 00:03:04,222
+união de possibilidades significa olhar para os dois
+
+48
+00:03:04,222 --> 00:03:09,111
+resultados que servem, sem contar nenhum deles duas
+
+49
+00:03:09,111 --> 00:03:14,000
+vezes.
+
+50
+00:03:15,000 --> 00:03:19,889
+Temos, então, dois casos favoráveis entre os seis
+
+51
+00:03:19,889 --> 00:03:24,778
+resultados do dado. Dois sextos, ou um terço.
+
+52
+00:03:24,778 --> 00:03:29,667
+A palavra ou costuma indicar uma reunião de
+
+53
+00:03:29,667 --> 00:03:34,556
+possibilidades, mas não significa simplesmente somar tudo sem
+
+54
+00:03:34,556 --> 00:03:39,444
+pensar. Se dois eventos puderem ocorrer juntos, a
+
+55
+00:03:39,444 --> 00:03:44,333
+interseção exigirá cuidado para não contar o mesmo
+
+56
+00:03:44,333 --> 00:03:49,222
+resultado duas vezes. Aqui isso não acontece: em
+
+57
+00:03:49,222 --> 00:03:54,111
+uma única jogada, o dado não mostra um
+
+58
+00:03:54,111 --> 00:03:59,000
+e seis simultaneamente.
+
+59
+00:04:00,000 --> 00:04:05,500
+Passemos para a palavra e. Imagine uma moeda
+
+60
+00:04:05,500 --> 00:04:11,000
+equilibrada, lançada duas vezes. A primeira jogada pode
+
+61
+00:04:11,000 --> 00:04:16,500
+dar cara ou coroa. Só depois acontece a
+
+62
+00:04:16,500 --> 00:04:22,000
+segunda jogada. Essa sequência é importante: não estamos
+
+63
+00:04:22,000 --> 00:04:27,500
+escolhendo qualquer resultado em uma lista, mas percorrendo
+
+64
+00:04:27,500 --> 00:04:33,000
+etapas. Vamos desenhar o primeiro ponto de decisão.
+
+65
+00:04:33,000 --> 00:04:38,500
+A partir dele, cada possibilidade da primeira jogada
+
+66
+00:04:38,500 --> 00:04:44,000
+se ramifica novamente na segunda.
+
+67
+00:04:45,000 --> 00:04:49,900
+A árvore completa tem quatro caminhos: cara e
+
+68
+00:04:49,900 --> 00:04:54,800
+cara; cara e coroa; coroa e cara; coroa
+
+69
+00:04:54,800 --> 00:04:59,700
+e coroa. Todos são igualmente prováveis para moedas
+
+70
+00:04:59,700 --> 00:05:04,600
+justas e jogadas independentes. Se queremos cara na
+
+71
+00:05:04,600 --> 00:05:09,500
+primeira e coroa na segunda, acompanhamos um caminho
+
+72
+00:05:09,500 --> 00:05:14,400
+específico. A chance de cara é um meio.
+
+73
+00:05:14,400 --> 00:05:19,300
+Depois, a chance de coroa também é um
+
+74
+00:05:19,300 --> 00:05:24,200
+meio. Multiplicamos um meio por um meio e
+
+75
+00:05:24,200 --> 00:05:29,100
+obtemos um quarto. Multiplicar aqui representa percorrer etapas
+
+76
+00:05:29,100 --> 00:05:34,000
+sucessivas.
+
+77
+00:05:35,000 --> 00:05:38,222
+Agora vem uma mudança que costuma derrubar quem
+
+78
+00:05:38,222 --> 00:05:41,444
+só memoriza números. Voltamos à urna original: três
+
+79
+00:05:41,444 --> 00:05:44,667
+bolas azuis e duas vermelhas. Na primeira retirada,
+
+80
+00:05:44,667 --> 00:05:47,889
+a chance de azul é três quintos. Mas
+
+81
+00:05:47,889 --> 00:05:51,111
+a questão diz sem reposição. Isso quer dizer
+
+82
+00:05:51,111 --> 00:05:54,333
+que a bola retirada não volta para dentro
+
+83
+00:05:54,333 --> 00:05:57,556
+da urna. Observe a ação. Retiramos uma única
+
+84
+00:05:57,556 --> 00:06:00,778
+bola azul, e ela sai do conjunto de
+
+85
+00:06:00,778 --> 00:06:04,000
+possibilidades para o próximo sorteio.
+
+86
+00:06:05,000 --> 00:06:09,889
+Olhe o estado depois da retirada. Dentro da
+
+87
+00:06:09,889 --> 00:06:14,778
+urna restam exatamente duas bolas azuis e duas
+
+88
+00:06:14,778 --> 00:06:19,667
+vermelhas. A bola azul retirada continua visível do
+
+89
+00:06:19,667 --> 00:06:24,556
+lado de fora, mas não pode mais ser
+
+90
+00:06:24,556 --> 00:06:29,444
+sorteada. Agora o total é quatro, e só
+
+91
+00:06:29,444 --> 00:06:34,333
+duas azuis permanecem disponíveis. Por isso, sabendo que
+
+92
+00:06:34,333 --> 00:06:39,222
+a primeira foi azul, a chance de azul
+
+93
+00:06:39,222 --> 00:06:44,111
+na segunda é dois quartos, não três quintos.
+
+94
+00:06:44,111 --> 00:06:49,000
+O cenário mudou, então a probabilidade mudou.
+
+95
+00:06:50,000 --> 00:06:53,778
+Considere agora duas retiradas sem reposição e a
+
+96
+00:06:53,778 --> 00:06:57,556
+pergunta: qual é a chance de sair pelo
+
+97
+00:06:57,556 --> 00:07:01,333
+menos uma vermelha? Podemos desenhar os tipos de
+
+98
+00:07:01,333 --> 00:07:05,111
+sequência que atendem ao pedido: azul e vermelha;
+
+99
+00:07:05,111 --> 00:07:08,889
+vermelha e azul; ou duas vermelhas. São três
+
+100
+00:07:08,889 --> 00:07:12,667
+caminhos, mas eles não têm necessariamente a mesma
+
+101
+00:07:12,667 --> 00:07:16,444
+probabilidade. Somar probabilidades de caminhos exige calcular cada
+
+102
+00:07:16,444 --> 00:07:20,222
+uma corretamente. Existe uma maneira mais curta de
+
+103
+00:07:20,222 --> 00:07:24,000
+raciocinar, sem perder a precisão.
+
+104
+00:07:25,000 --> 00:07:28,545
+Pergunte qual é o contrário de sair pelo
+
+105
+00:07:28,545 --> 00:07:32,091
+menos uma vermelha. É não sair nenhuma vermelha;
+
+106
+00:07:32,091 --> 00:07:35,636
+ou seja, sair duas azuis. Na primeira retirada,
+
+107
+00:07:35,636 --> 00:07:39,182
+a chance de azul é três quintos. Se
+
+108
+00:07:39,182 --> 00:07:42,727
+a primeira foi azul, a segunda azul tem
+
+109
+00:07:42,727 --> 00:07:46,273
+chance de dois quartos. Multiplicando, temos seis vinte
+
+110
+00:07:46,273 --> 00:07:49,818
+avos: trinta por cento. Esse é o evento
+
+111
+00:07:49,818 --> 00:07:53,364
+contrário. Então, a chance de pelo menos uma
+
+112
+00:07:53,364 --> 00:07:56,909
+vermelha é um menos trinta por cento, exatamente
+
+113
+00:07:56,909 --> 00:08:00,455
+setenta por cento. Essa é a ideia de
+
+114
+00:08:00,455 --> 00:08:04,000
+complemento.
+
+115
+00:08:05,000 --> 00:08:08,800
+Sua vez. A urna agora tem quatro bolas
+
+116
+00:08:08,800 --> 00:08:12,600
+azuis e três vermelhas. Em duas retiradas sem
+
+117
+00:08:12,600 --> 00:08:16,400
+reposição, qual é a chance de pelo menos
+
+118
+00:08:16,400 --> 00:08:20,200
+uma vermelha? Pense no contrário. Pause, se precisar,
+
+119
+00:08:20,200 --> 00:08:24,000
+antes da resolução.
+
+120
+00:08:25,000 --> 00:08:29,250
+O contrário de pelo menos uma vermelha é
+
+121
+00:08:29,250 --> 00:08:33,500
+sair duas azuis. Primeiro, quatro azuis em sete
+
+122
+00:08:33,500 --> 00:08:37,750
+bolas. Depois, três azuis em seis. Multiplicamos quatro
+
+123
+00:08:37,750 --> 00:08:42,000
+sétimos por três sextos e obtemos dois sétimos.
+
+124
+00:08:42,000 --> 00:08:46,250
+Esse é o contrário. Agora calculamos um menos
+
+125
+00:08:46,250 --> 00:08:50,500
+dois sétimos: cinco sétimos, aproximadamente setenta e um
+
+126
+00:08:50,500 --> 00:08:54,750
+vírgula quatro por cento. A conta acompanha a
+
+127
+00:08:54,750 --> 00:08:59,000
+mudança da urna.
+
+128
+00:09:00,000 --> 00:09:03,167
+Recapitulando: espaço amostral mostra tudo o que pode
+
+129
+00:09:03,167 --> 00:09:06,333
+acontecer. Casos favoráveis mostram o que interessa. O
+
+130
+00:09:06,333 --> 00:09:09,500
+evento e acompanha um caminho de etapas. E
+
+131
+00:09:09,500 --> 00:09:12,667
+o complemento às vezes transforma uma pergunta difícil
+
+132
+00:09:12,667 --> 00:09:15,833
+em uma conta mais curta. Probabilidade não começa
+
+133
+00:09:15,833 --> 00:09:19,000
+na fórmula. Começa nas possibilidades. Entenda vendo.

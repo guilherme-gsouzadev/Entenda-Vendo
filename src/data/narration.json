@@ -1,0 +1,194 @@
+{
+  "language": "pt-BR",
+  "voiceStatus": "UNSELECTED",
+  "status": "SCRIPT_DRAFT_NOT_VOICE_SYNCHRONIZED",
+  "shots": [
+    {
+      "shot": "SH01",
+      "scene": "S01",
+      "startSec": 0,
+      "endSec": 5,
+      "durationSec": 5,
+      "text": "Imagine uma urna com cinco bolas. Qual é a chance?",
+      "wordCount": 10,
+      "estimatedWpm": 120.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH02",
+      "scene": "S01",
+      "startSec": 5,
+      "endSec": 25,
+      "durationSec": 20,
+      "text": "Três bolas são azuis e duas são vermelhas. Você precisa tirar azul para ganhar. Sem fazer a conta, quais resultados parecem mais prováveis? Aqui ninguém retirou nada: cinco bolas continuam disponíveis. Vamos entender como transformar essa intuição em uma chance matemática.",
+      "wordCount": 41,
+      "estimatedWpm": 123.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH03",
+      "scene": "S02",
+      "startSec": 25,
+      "endSec": 50,
+      "durationSec": 25,
+      "text": "Vamos organizar as possibilidades. Aqui estão cinco bolas que poderiam sair. Se buscamos azul, três resultados são favoráveis. Ao todo, são cinco possíveis. Por isso escrevemos três sobre cinco. Primeiro contamos; depois nasce a fração. Essa ordem importa: a fórmula é uma tradução do cenário.",
+      "wordCount": 45,
+      "estimatedWpm": 108.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH04",
+      "scene": "S02",
+      "startSec": 50,
+      "endSec": 80,
+      "durationSec": 30,
+      "text": "A fração três quintos também pode ser escrita como sessenta por cento. Não é preciso decorar esse número, pois basta dividir três por cinco. Mas cuidado: essa porcentagem só descreve o primeiro sorteio nessa urna, enquanto ainda temos três azuis e duas vermelhas. Se os objetos mudarem, devemos contar tudo novamente. Guarde essa ideia; ela será decisiva daqui a pouco.",
+      "wordCount": 60,
+      "estimatedWpm": 120.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH05",
+      "scene": "S03",
+      "startSec": 80,
+      "endSec": 115,
+      "durationSec": 35,
+      "text": "Agora troque a urna por um dado comum de seis faces, todas com a mesma chance de sair. Em uma jogada, os resultados possíveis são um, dois, três, quatro, cinco e seis. Esse conjunto completo recebe o nome de espaço amostral. É o primeiro desenho que devemos construir antes de resolver uma questão: quais resultados podem acontecer? Não confunda o espaço amostral com os resultados que desejamos.",
+      "wordCount": 67,
+      "estimatedWpm": 114.9,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH06",
+      "scene": "S03",
+      "startSec": 115,
+      "endSec": 150,
+      "durationSec": 35,
+      "text": "Suponha que a questão peça um número par. Entre os seis resultados possíveis, apenas dois, quatro e seis atendem ao pedido. São três casos favoráveis em seis possíveis, portanto três sextos, que simplifica para um meio. Em porcentagem, cinquenta por cento. O mesmo dado pode gerar questões diferentes porque muda o evento de interesse. Nosso espaço amostral continua com seis resultados; o que muda é a seleção dos favoráveis.",
+      "wordCount": 69,
+      "estimatedWpm": 118.3,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH07",
+      "scene": "S04",
+      "startSec": 150,
+      "endSec": 195,
+      "durationSec": 45,
+      "text": "E quando aparece a palavra ou? Vamos perguntar a chance de o dado mostrar um ou seis. O resultado um atende à condição, e o resultado seis também. Basta destacar os dois cartões no conjunto. Nesse exemplo, eles não podem ocorrer ao mesmo tempo em uma jogada. A união de possibilidades significa olhar para os dois resultados que servem, sem contar nenhum deles duas vezes.",
+      "wordCount": 65,
+      "estimatedWpm": 86.7,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH08",
+      "scene": "S04",
+      "startSec": 195,
+      "endSec": 240,
+      "durationSec": 45,
+      "text": "Temos, então, dois casos favoráveis entre os seis resultados do dado. Dois sextos, ou um terço. A palavra ou costuma indicar uma reunião de possibilidades, mas não significa simplesmente somar tudo sem pensar. Se dois eventos puderem ocorrer juntos, a interseção exigirá cuidado para não contar o mesmo resultado duas vezes. Aqui isso não acontece: em uma única jogada, o dado não mostra um e seis simultaneamente.",
+      "wordCount": 67,
+      "estimatedWpm": 89.3,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH09",
+      "scene": "S05",
+      "startSec": 240,
+      "endSec": 285,
+      "durationSec": 45,
+      "text": "Passemos para a palavra e. Imagine uma moeda equilibrada, lançada duas vezes. A primeira jogada pode dar cara ou coroa. Só depois acontece a segunda jogada. Essa sequência é importante: não estamos escolhendo qualquer resultado em uma lista, mas percorrendo etapas. Vamos desenhar o primeiro ponto de decisão. A partir dele, cada possibilidade da primeira jogada se ramifica novamente na segunda.",
+      "wordCount": 61,
+      "estimatedWpm": 81.3,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH10",
+      "scene": "S05",
+      "startSec": 285,
+      "endSec": 335,
+      "durationSec": 50,
+      "text": "A árvore completa tem quatro caminhos: cara e cara; cara e coroa; coroa e cara; coroa e coroa. Todos são igualmente prováveis para moedas justas e jogadas independentes. Se queremos cara na primeira e coroa na segunda, acompanhamos um caminho específico. A chance de cara é um meio. Depois, a chance de coroa também é um meio. Multiplicamos um meio por um meio e obtemos um quarto. Multiplicar aqui representa percorrer etapas sucessivas.",
+      "wordCount": 73,
+      "estimatedWpm": 87.6,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH11",
+      "scene": "S06",
+      "startSec": 335,
+      "endSec": 365,
+      "durationSec": 30,
+      "text": "Agora vem uma mudança que costuma derrubar quem só memoriza números. Voltamos à urna original: três bolas azuis e duas vermelhas. Na primeira retirada, a chance de azul é três quintos. Mas a questão diz sem reposição. Isso quer dizer que a bola retirada não volta para dentro da urna. Observe a ação. Retiramos uma única bola azul, e ela sai do conjunto de possibilidades para o próximo sorteio.",
+      "wordCount": 69,
+      "estimatedWpm": 138.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH12",
+      "scene": "S06",
+      "startSec": 365,
+      "endSec": 410,
+      "durationSec": 45,
+      "text": "Olhe o estado depois da retirada. Dentro da urna restam exatamente duas bolas azuis e duas vermelhas. A bola azul retirada continua visível do lado de fora, mas não pode mais ser sorteada. Agora o total é quatro, e só duas azuis permanecem disponíveis. Por isso, sabendo que a primeira foi azul, a chance de azul na segunda é dois quartos, não três quintos. O cenário mudou, então a probabilidade mudou.",
+      "wordCount": 71,
+      "estimatedWpm": 94.7,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH13",
+      "scene": "S07",
+      "startSec": 410,
+      "endSec": 445,
+      "durationSec": 35,
+      "text": "Considere agora duas retiradas sem reposição e a pergunta: qual é a chance de sair pelo menos uma vermelha? Podemos desenhar os tipos de sequência que atendem ao pedido: azul e vermelha; vermelha e azul; ou duas vermelhas. São três caminhos, mas eles não têm necessariamente a mesma probabilidade. Somar probabilidades de caminhos exige calcular cada uma corretamente. Existe uma maneira mais curta de raciocinar, sem perder a precisão.",
+      "wordCount": 69,
+      "estimatedWpm": 118.3,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH14",
+      "scene": "S07",
+      "startSec": 445,
+      "endSec": 485,
+      "durationSec": 40,
+      "text": "Pergunte qual é o contrário de sair pelo menos uma vermelha. É não sair nenhuma vermelha; ou seja, sair duas azuis. Na primeira retirada, a chance de azul é três quintos. Se a primeira foi azul, a segunda azul tem chance de dois quartos. Multiplicando, temos seis vinte avos: trinta por cento. Esse é o evento contrário. Então, a chance de pelo menos uma vermelha é um menos trinta por cento, exatamente setenta por cento. Essa é a ideia de complemento.",
+      "wordCount": 81,
+      "estimatedWpm": 121.5,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH15",
+      "scene": "S08",
+      "startSec": 485,
+      "endSec": 505,
+      "durationSec": 20,
+      "text": "Sua vez. A urna agora tem quatro bolas azuis e três vermelhas. Em duas retiradas sem reposição, qual é a chance de pelo menos uma vermelha? Pense no contrário. Pause, se precisar, antes da resolução.",
+      "wordCount": 35,
+      "estimatedWpm": 105.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH16",
+      "scene": "S08",
+      "startSec": 505,
+      "endSec": 540,
+      "durationSec": 35,
+      "text": "O contrário de pelo menos uma vermelha é sair duas azuis. Primeiro, quatro azuis em sete bolas. Depois, três azuis em seis. Multiplicamos quatro sétimos por três sextos e obtemos dois sétimos. Esse é o contrário. Agora calculamos um menos dois sétimos: cinco sétimos, aproximadamente setenta e um vírgula quatro por cento. A conta acompanha a mudança da urna.",
+      "wordCount": 59,
+      "estimatedWpm": 101.1,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    },
+    {
+      "shot": "SH17",
+      "scene": "S09",
+      "startSec": 540,
+      "endSec": 560,
+      "durationSec": 20,
+      "text": "Recapitulando: espaço amostral mostra tudo o que pode acontecer. Casos favoráveis mostram o que interessa. O evento e acompanha um caminho de etapas. E o complemento às vezes transforma uma pergunta difícil em uma conta mais curta. Probabilidade não começa na fórmula. Começa nas possibilidades. Entenda vendo.",
+      "wordCount": 47,
+      "estimatedWpm": 141.0,
+      "status": "SCRIPT_DRAFT_REQUIRES_READTHROUGH_AND_AUDIO_TIMING"
+    }
+  ]
+}

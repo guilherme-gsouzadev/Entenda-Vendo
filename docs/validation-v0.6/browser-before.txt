@@ -1,0 +1,2 @@
+RECOGNIZED [ 'ProbabilidadeConcursos', 'EntendaVendoThumbnail' ]
+CAPTURE PASS /workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/out/before

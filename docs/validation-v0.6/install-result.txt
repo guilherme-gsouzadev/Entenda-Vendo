@@ -1,0 +1,5 @@
+Instalação observada em 13/10/2026.
+Comando: npm install --fetch-retries=0 --fetch-timeout=30000
+Resultado: exit 0, added 255 packages in 39s.
+Playwright 1.62.1: npm install --save-dev --save-exact playwright@1.62.1, exit 0, added 4 packages in 18s.
+package-lock.json incluído. npm ci limpo não foi executado nesta sessão.

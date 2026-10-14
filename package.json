@@ -1,0 +1,32 @@
+{
+  "name": "entenda-vendo-mvp01-probabilidade",
+  "version": "0.6.0",
+  "private": true,
+  "description": "Entenda Vendo — Probabilidade para Concursos / Editorial Visual Storytelling",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "compositions": "remotion compositions src/index.ts",
+    "build": "remotion bundle src/index.ts --out-dir out/bundle --bundle-cache=false",
+    "still": "remotion still src/index.ts EntendaVendoThumbnail out/thumbnail-remotion.png",
+    "render": "remotion render src/index.ts ProbabilidadeConcursos out/probabilidade.mp4 --codec=h264",
+    "render:preview": "remotion render src/index.ts ProbabilidadeConcursos out/preview.mp4 --frames=10860-11160 --codec=h264 --scale=0.5",
+    "test": "node --test tests/*.test.mjs",
+    "qa": "node scripts/qa.mjs",
+    "subtitles": "node scripts/make-captions.mjs",
+    "typecheck": "tsc --noEmit",
+    "qa:browser": "npm run build && node scripts/browser-qa.mjs",
+    "render:browser": "npm run build && node scripts/browser-qa.mjs --render"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "remotion": "4.0.535",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "typescript": "5.9.3",
+    "playwright": "1.62.1"
+  }
+}

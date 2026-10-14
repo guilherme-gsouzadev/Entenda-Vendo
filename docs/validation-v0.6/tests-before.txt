@@ -1,0 +1,22 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> entenda-vendo-mvp01-probabilidade@0.5.0 test
+> node --test tests/*.test.mjs
+
+✔ antes 3 azuis + 2 vermelhas, total cinco (1.844096ms)
+✔ depois exatamente 2+2 dentro e UMA azul visível fora (0.165798ms)
+✔ probabilidade: retirada sem reposição (0.194165ms)
+✔ questão final: 4/7 * 3/6 = 2/7, complemento 5/7 (0.197823ms)
+✔ dado e árvore não confundem OU e E (0.201245ms)
+✔ ratios invalidos levantam erro (0.629392ms)
+✔ 9 cenas e 17 tomadas sem lacunas/overlap, 560 segundos a 30fps (0.317164ms)
+✔ roteiro possui um bloco por tomada com textos e tempos corretos (0.608206ms)
+✔ legendas provisórias dentro da duração e sem sobreposição (0.632643ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 139.359614

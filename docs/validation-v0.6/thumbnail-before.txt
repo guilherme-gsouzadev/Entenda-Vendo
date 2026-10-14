@@ -1,0 +1,26 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> entenda-vendo-mvp01-probabilidade@0.5.0 still
+> remotion still src/index.ts EntendaVendoThumbnail out/thumbnail-remotion.png
+
+Downloading Chrome Headless Shell https://www.remotion.dev/chrome-headless-shell
+Bundling 6%
+Bundling 18%
+Bundling 61%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+Getting composition
+
+SystemError [ERR_SYSTEM_ERROR]: A system error occurred: uv_interface_addresses returned Unknown system error 1 (Unknown system error 1)
+    at Object.networkInterfaces (node:os:218:16)
+    at getPortConfig (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/port-config.js:14:44)
+    at serveStatic (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/serve-static.js:57:56)
+    at Object.prepareServer (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/renderer/dist/prepare-server.js:71:91)
+    at renderStillFlow (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/cli/dist/render-flows/still.js:134:53)
+    at async still (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/cli/dist/still.js:112:5)
+    at async cli (/workspace/scratch/aab6ed4c5936/project/entenda-vendo-remotion-mvp01/node_modules/@remotion/cli/dist/index.js:124:13)

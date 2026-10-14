@@ -1,0 +1,18 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> entenda-vendo-mvp01-probabilidade@0.6.0 build
+> remotion bundle src/index.ts --out-dir out/bundle --bundle-cache=false
+
+Bundling 6%
+Bundling 21%
+Bundling 32%
+Bundling 43%
+Bundling 54%
+Bundling 65%
+Bundling 71%
+Bundling 76%
+Bundling 81%
+Bundling 87%
+Bundling 92%
+Bundling 98%
++ /workspace/scratch/aab6ed4c5936/validated/entenda-vendo-remotion-mvp01/out/bundle

@@ -1,0 +1,25 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> entenda-vendo-mvp01-probabilidade@0.6.0 test
+> node --test tests/*.test.mjs
+
+✔ antes 3 azuis + 2 vermelhas, total cinco (1.476368ms)
+✔ depois exatamente 2+2 dentro e UMA azul visível fora (0.196042ms)
+✔ probabilidade: retirada sem reposição (0.659133ms)
+✔ questão final: 4/7 * 3/6 = 2/7, complemento 5/7 (0.254696ms)
+✔ dado e árvore não confundem OU e E (0.222478ms)
+✔ ratios invalidos levantam erro (0.650077ms)
+✔ 9 cenas e 17 tomadas sem lacunas/overlap, 560 segundos a 30fps (0.236904ms)
+✔ roteiro possui um bloco por tomada com textos e tempos corretos (0.584493ms)
+✔ legendas provisórias dentro da duração e sem sobreposição (0.62534ms)
+✔ four surviving balls retain exact positions and colors (1.978493ms)
+✔ removed ball starts at the central blue seat and ends outside at the hand (0.280613ms)
+✔ ball passes above the rim before crossing the side, with continuous motion (0.774817ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 116.230309

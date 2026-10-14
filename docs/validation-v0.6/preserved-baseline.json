@@ -1,0 +1,22 @@
+[
+  {
+    "path": "src/data/math.mjs",
+    "unchanged": true,
+    "sha256": "bf673dc302df3cade6583a8154c08870ca39236702ba46c68dd87f7a993fa4bd"
+  },
+  {
+    "path": "src/data/narration.json",
+    "unchanged": true,
+    "sha256": "d135f7dd4135bfc5d594e1512b7763ce3292c01aac2fb4fd3c9dc8631f49ef50"
+  },
+  {
+    "path": "src/data/captions-draft.json",
+    "unchanged": true,
+    "sha256": "44a72e6fdd84e0c6724735a7f3adf2bb8872af2d21b719d0374fbf18295d1ac1"
+  },
+  {
+    "path": "docs/production_pack_v0.5_implementation_audit.xlsx",
+    "unchanged": true,
+    "sha256": "533c1321f92ce293e0a1c6b6e864290a34e03fc4b2d0f597e6d26e231a35d402"
+  }
+]
